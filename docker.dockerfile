@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM almalinux:latest
 RUN yum install -y httpd \
     zip \
     unzip
