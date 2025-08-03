@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mrdevops
+  labels:
+    app: mrdevops
+spec:
+  type: LoadBalancer  # Use NodePort or LoadBalancer
+  ports:
+    - port: 8080         # External port
+      targetPort: 80     # Pod/container port
+      nodePort: 31200    # Fixed NodePort (optional if LoadBalancer is used in real cloud)
+  selector:
+    app: mrdevops

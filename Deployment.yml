@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mrdevops
+spec:
+  replicas: 2  # Number of pods to run
+  selector:
+    matchLabels:
+      app: mrdevops
+  template:
+    metadata:
+      labels:
+        app: mrdevops
+    spec:
+      containers:
+        - name: mrdevops
+          image: malsaleh/pipeline-demo:v1.31  # <--- Your own image here
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
