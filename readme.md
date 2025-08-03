@@ -35,6 +35,7 @@ Three EC2 instances were used:
 - `jenkins-server` – Continuous Integration
 - `ansible-server` – Configuration management
 - `webapp-server` – Hosts the Kubernetes cluster
+<img width="1831" height="622" alt="enctaasne" src="https://github.com/user-attachments/assets/71ae42d1-605c-454f-85a5-3e589cdd6ac1" />
 
 ---
 
@@ -49,5 +50,6 @@ Three EC2 instances were used:
 
 ## ✅ Final Result
 
+<img width="1242" height="490" alt="desktop" src="https://github.com/user-attachments/assets/7ce96110-628b-4bd8-a378-133f21a5f224" />
 
 
